@@ -1,13 +1,10 @@
 const cylinder = {
-    radius: 3,
-    height: 6,
-    calculateArea: function() {
-      const area = Math.PI * Math.pow (this.radius,2)* this.height;
-      return area.toFixed(2); // Return area with 2 decimal places
-    }
+    radius: 7,
+    height: 7,
+    Area: function() {
+      const pi = Math.PI;
+      const area = pi * Math.pow(this.radius, 2) * this.height;
+      return area.toFixed(3); 
   };
-  
-  
-  const area = cylinder.calculateArea();
-  console.log('The area of the cylinder is ${area} square units.');
-  
+  //for Output
+  console.log(`The area of the cylinder is: ${cylinder.Area()}`);
